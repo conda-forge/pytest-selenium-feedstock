@@ -1,7 +1,7 @@
 {% set name = "pytest-selenium" %}
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "0c50f7815f65845840dfe86b69c601f81ae723ea63aed57d32e8ec4994b62e88" %}
+{% set hash = "f0934b26e94760507c0eb6859ebdd193d59c1156187eef4ebb7abdfd8433c6b0" %}
 
 package:
   name: {{ name }}
@@ -21,7 +21,7 @@ requirements:
     - python
     - setuptools
     - setuptools_scm
-    - pytest >=2.7.3
+    - pytest >=3.0
     - pytest-base-url
     - pytest-html >=1.14.0
     - pytest-variables >=1.5.0
@@ -30,7 +30,7 @@ requirements:
 
   run:
     - python
-    - pytest >=2.7.3
+    - pytest >=3.0
     - pytest-base-url
     - pytest-html >=1.14.0
     - pytest-variables >=1.5.0
