@@ -1,7 +1,7 @@
 {% set name = "pytest-selenium" %}
-{% set version = "1.12.0" %}
+{% set version = "1.13.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "b3c36a212d0b5a3ba61fccbf9f754aa2286840dc2ae910a04b67c72685a1bca7" %}
+{% set hash = "3b9191877ee61ff87bf705b8e2072b57be4872cfd5543a76b3a104a843b6c520" %}
 
 package:
   name: {{ name }}
@@ -13,20 +13,16 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install . --no-deps --ignore-installed
 
 requirements:
   build:
+    - pip
     - python
     - setuptools
-    - setuptools_scm
-    - pytest >=3.0
-    - pytest-base-url
-    - pytest-html >=1.14.0
-    - pytest-variables >=1.5.0
-    - selenium >=3.0.0
-    - requests
+    - setuptools_scm    
 
   run:
     - python

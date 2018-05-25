@@ -14,14 +14,15 @@ Summary: pytest-selenium is a plugin for py.test that provides support for runni
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-selenium-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pytest-selenium-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytest-selenium-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytest-selenium-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pytest-selenium-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pytest-selenium-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pytest-selenium-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pytest-selenium-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-selenium/badges/version.svg)](https://anaconda.org/conda-forge/pytest-selenium)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pytest-selenium/badges/downloads.svg)](https://anaconda.org/conda-forge/pytest-selenium)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pytest--selenium-green.svg)](https://anaconda.org/conda-forge/pytest-selenium) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pytest-selenium.svg)](https://anaconda.org/conda-forge/pytest-selenium) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pytest-selenium.svg)](https://anaconda.org/conda-forge/pytest-selenium) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pytest-selenium.svg)](https://anaconda.org/conda-forge/pytest-selenium) |
 
 Installing pytest-selenium
 ==========================
