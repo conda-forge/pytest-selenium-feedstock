@@ -1,7 +1,7 @@
 {% set name = "pytest-selenium" %}
-{% set version = "1.15.1" %}
+{% set version = "1.16.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "798684c72b6dd3c70768903813e6055938a30049de28809882428feb5db9033e" %}
+{% set hash = "c4d5a73d501f9fb3afb70e781f6fc2106a7b5f64387ed449b15eb1df61fa7915" %}
 
 package:
   name: {{ name }}
