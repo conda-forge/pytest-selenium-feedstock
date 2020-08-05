@@ -1,7 +1,6 @@
 {% set name = "pytest-selenium" %}
-{% set version = "1.17.0" %}
-{% set hash_type = "sha256" %}
-{% set hash = "e8034ebabc3b55fad57bfb97e7b0b2137532dbc65f33706e1ce1ed8e547caa1a" %}
+{% set version = "2.0.0" %}
+{% set hash = "6a7c655c9202fa5964b872859d8aad18a67ccbdfbaa078d154cab82914d70504" %}
 
 package:
   name: {{ name }}
@@ -10,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
@@ -20,18 +19,19 @@ build:
 requirements:
   build:
     - pip
-    - python
+    - python >=3.6
     - setuptools
-    - setuptools_scm    
+    - setuptools_scm
 
   run:
-    - python
-    - pytest >=3.0
+    - python >=3.6
+    - pytest >=5.0
     - pytest-base-url
     - pytest-html >=1.14.0
     - pytest-variables >=1.5.0
     - selenium >=3.0.0
     - requests
+    - tenacity 6.*
 
 test:
   imports:
