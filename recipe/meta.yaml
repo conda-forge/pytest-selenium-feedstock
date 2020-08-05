@@ -19,18 +19,19 @@ build:
 requirements:
   build:
     - pip
-    - python
+    - python >=3.6
     - setuptools
     - setuptools_scm
 
   run:
-    - python
-    - pytest >=3.0
+    - python >=3.6
+    - pytest >=5.0
     - pytest-base-url
     - pytest-html >=1.14.0
     - pytest-variables >=1.5.0
     - selenium >=3.0.0
     - requests
+    - tenacity 6.*
 
 test:
   imports:
