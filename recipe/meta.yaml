@@ -19,18 +19,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
-    - setuptools
-    - setuptools_scm
+    - poetry
+    - python >=3.6.2
 
   run:
-    - python >=3.6
-    - pytest >=5.0
-    - pytest-base-url
+    - python >=3.6.2
+    - pytest >=6.0.0
+    - pytest-base-url >=1.4.2
     - pytest-html >=1.14.0
     - pytest-variables >=1.5.0
-    - selenium >=3.0.0
-    - requests
+    - requests >=2.26.0
+    - selenium 3.*
     - tenacity 6.*
 
 test:
@@ -40,7 +39,8 @@ test:
 
 about:
   home: https://pypi.python.org/pypi/pytest-selenium
-  license: MPL 2.0
+  dev_url: https://github.com/pytest-dev/pytest-selenium
+  license: MPL-2.0
   license_file: LICENSE
   summary: pytest-selenium is a plugin for py.test that provides support for running Selenium based tests.
 
