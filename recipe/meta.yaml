@@ -1,6 +1,6 @@
 {% set name = "pytest-selenium" %}
-{% set version = "2.0.1" %}
-{% set hash = "a0008e6dce7c68501369c1c543420f5906ffada493d4ff0c5d9d5ccdf4022203" %}
+{% set version = "4.0.0" %}
+{% set hash = "a0b45a0d1d5833a67b14a279cfe1a0eeaf4981ab4b0d12e9787fcfa1ed48049f" %}
 
 package:
   name: {{ name }}
@@ -17,7 +17,7 @@ build:
   script: python -m pip install . --no-deps --ignore-installed
 
 requirements:
-  build:
+  host:
     - pip
     - python >=3.6
     - setuptools
