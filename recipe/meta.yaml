@@ -1,13 +1,13 @@
 {% set name = "pytest-selenium" %}
-{% set version = "4.0.0" %}
+{% set version = "4.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest-selenium-{{ version }}.tar.gz
-  sha256: a0b45a0d1d5833a67b14a279cfe1a0eeaf4981ab4b0d12e9787fcfa1ed48049f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e7329aceb4c1e04aa711c5c625106ab906855a5e208a2246d6b6055f2011522f
 
 build:
   noarch: python
@@ -25,11 +25,11 @@ requirements:
     - pytest-base-url >=2.0.0
     - pytest-html >=2.0.0
     - pytest-variables >=2.0.0
-    - pytest >=6.0    
+    - pytest >=6.0
     - requests >=2.26.0
     - selenium >=4.0.0
     - tenacity >=6.0.0
-  
+
   run_constrained:
     - appium-python-client >=1.0.0
 
