@@ -1,11 +1,11 @@
-About pytest-selenium
-=====================
+About pytest-selenium-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-selenium-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.python.org/pypi/pytest-selenium
 
 Package license: MPL-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-selenium-feedstock/blob/main/LICENSE.txt)
 
 Summary: pytest-selenium is a plugin for py.test that provides support for running Selenium based tests.
 
