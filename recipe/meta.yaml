@@ -18,7 +18,8 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - poetry-core >=1.0.0
+    - hatch-vcs >=0.3
+    - hatchling >=1.13
 
   run:
     - python >=3.7
@@ -40,6 +41,7 @@ test:
 
 about:
   home: https://pypi.python.org/pypi/pytest-selenium
+  dev_url: https://github.com/pytest-dev/pytest-selenium
   summary: pytest-selenium is a plugin for py.test that provides support for running Selenium based tests.
   license: MPL-2.0
   license_file: LICENSE
