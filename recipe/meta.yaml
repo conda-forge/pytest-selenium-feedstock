@@ -1,5 +1,5 @@
 {% set name = "pytest-selenium" %}
-{% set version = "4.0.1" %}
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: e7329aceb4c1e04aa711c5c625106ab906855a5e208a2246d6b6055f2011522f
+  sha256: dd444a697769565255e8e5cac9c01699361606add7d23ad37fd96bf135e7789d
 
 build:
   noarch: python
@@ -28,7 +28,7 @@ requirements:
     - pytest-variables >=2.0.0
     - pytest >=6.0
     - requests >=2.26.0
-    - selenium >=4.0.0
+    - selenium >=4.10.0
     - tenacity >=6.0.0
 
   run_constrained:
