@@ -28,7 +28,7 @@ requirements:
     - pytest-variables >=2.0.0
     - pytest >=6.0
     - requests >=2.26.0
-    - selenium >=4.0.0
+    - selenium >=4.10.0
     - tenacity >=6.0.0
 
   run_constrained:
