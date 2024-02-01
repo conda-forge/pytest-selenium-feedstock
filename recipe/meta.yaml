@@ -1,5 +1,5 @@
 {% set name = "pytest-selenium" %}
-{% set version = "4.0.2" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: dd444a697769565255e8e5cac9c01699361606add7d23ad37fd96bf135e7789d
+  sha256: b0a4e1f27750cde631c513c87ae4863dcf9e180e5a1d680a66077da8a669156c
 
 build:
   noarch: python
