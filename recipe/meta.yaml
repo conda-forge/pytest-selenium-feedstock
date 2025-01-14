@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: b0a4e1f27750cde631c513c87ae4863dcf9e180e5a1d680a66077da8a669156c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatch-vcs >=0.3
     - hatchling >=1.13
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pytest >=6.0
     - pytest-base-url >=2.0.0
     - pytest-html >=4.0.0
@@ -35,6 +35,8 @@ requirements:
     - appium-python-client >=1.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pytest_selenium
     - pytest_selenium.drivers
